@@ -1,0 +1,148 @@
+/* Обнуление */
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,
+ol,
+li{
+    list-style: none;
+}
+img{
+    vertical-align: top;
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: inherit;
+    font-size: inherit;
+}
+html, body{
+    height: 100%;
+    line-height: 1;
+    font-size: 16px;
+    color: black;
+    font-family: 'Della Respira', serif;
+    background-color: black;
+    background-image:
+    radial-gradient(
+      #fff,
+      #3e627e
+    );
+}
+/*---------------------------------------------------------------------------------*/
+.wrapper{
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+/*---------------------------------------------------------------------------------*/
+._container{
+    max-width: 1499px;
+    padding: 0 25px;
+    margin: 0 auto;
+    box-sizing: content-box;
+}
+.forma__container {
+    position: relative;
+    min-width: 400px;
+}
+/*---------------------------------------------------------------------------------*/
+.forma__body {
+    margin-top: 40%;
+    padding: 15%;
+    border: 2px rgb(51, 141, 224) solid;
+    background-color: rgb(221, 231, 233);
+    z-index: 1;
+    border-radius: 10px;
+}
+.forma__title{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 15% 0;
+    text-align: center;
+}
+.forma__items {
+}
+.items__body {
+}
+.item__body {
+    flex-direction: row;
+    height: 100%;
+}
+.item__body:not(:last-child){
+    display: flex;
+    margin-bottom: 12px;
+}
+.item__title {
+    padding-right: 15px;
+    flex: 2 1 0%;
+    text-align: right;
+    width: 30%;
+}
+.item__info {
+    position: relative;
+    flex: 1 1 50%;
+    width: 200px;
+    height: 23px;
+    font-size: 15px;
+    background-color: #fff;
+
+}
+.item__info form{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.item__info select{
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+}
+.item__info input{
+    position: absolute;
+    width: 100%;
+    padding: 2px 5px;
+    font-size: 14px;
+    background-color: #fff;
+    border: 1px rgba(70, 69, 69, 0.685) solid;
+}
+.listbox {
+    width: 100%;
+    height: 100%;
+}
+#info__brigade{
+}
+#info__shift{
+}
+.item__button {
+    width: 100%;
+    height: 40px;
+    margin-top: 10%;
+}
+.item__button input{
+    width: 100px;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 12px;
+    background-color: rgb(58, 153, 231);
+    transform: scale(1);
+}
+.item__button input:hover{
+    background-color: rgb(70, 139, 196);
+}
+.item__button input:active{
+    transform: scale(1.03);
+    transition: 0.1s;
+}
+
+
+
