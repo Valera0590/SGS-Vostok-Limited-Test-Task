@@ -99,11 +99,17 @@ function clearForm(form){
     }
 }
 function getBrigadeTime(){
-    let data = new Date();
-    let time1 = 8*3600000;
-    let time2 = 20*3600000;
-    let timeNow = data.getTime();
-    if (timeNow >= time1 && timeNow <= time2)
+    let date = new Date();
+    let timeStart = 8*3600000;
+    let timeEnd = 20*3600000;
+    let timeNow = date.getTime();
+    let tS = new Date();
+    tS.setHours(8); tS.setMinutes(0); tS.setSeconds(0); tS.setMilliseconds(0);
+    let tE = new Date();
+    tE.setHours(20); tE.setMinutes(0); tE.setSeconds(0); tE.setMilliseconds(0);
+    timeStart = tS.getTime();
+    timeEnd = tE.getTime();
+    if (timeNow >= timeStart && timeNow <= timeEnd)
         return 0;
     return 1;
 }
